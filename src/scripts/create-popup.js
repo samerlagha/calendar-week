@@ -10,7 +10,7 @@ export {
     createPopup,
     createPopupButton,
     formFieldPopUp,
-    
+    // weekBar
 };
 
 const weekBar = document.querySelector('.calendar__week-bar');

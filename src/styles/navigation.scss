@@ -20,7 +20,7 @@
 
 .day-name {
     z-index: 2;
-    font-size: 12px;
+    font-size: 9px;
     text-transform: uppercase;
     margin-bottom: 5px;
     letter-spacing: .8px;
@@ -37,14 +37,14 @@
     min-width: 35px;
 
     &:hover{
-        background-color: Grey;
+        background-color: $lightGrey;
         color: $text-darkGrey;
         border-radius: 100%;
-        
+        //border: 1px solid $violet;
     }
 
     &_current {
-        background-color: blue;
+        background-color: $sky-blue;
         color: $text-white;
         border-radius: 100%;
     }

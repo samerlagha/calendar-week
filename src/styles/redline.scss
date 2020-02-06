@@ -10,14 +10,14 @@
 
 .line {
     position: relative;
-    background-color: red;
+    background-color: $red;
     height: 2px;
     width: 100%;
 }
 .dot {
     position: relative;
     border-radius: 100%;
-    background-color: red;
+    background-color: $red;
     height: 8px;
     width: 8px;
 
