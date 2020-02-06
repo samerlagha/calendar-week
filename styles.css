@@ -17,8 +17,8 @@ html {
   height: 70px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid rgba(155, 154, 154, 0.75);
-  background: linear-gradient(90deg, #26ecdb 3%, #18adf4 47%, rgba(142, 58, 255, 0.9906337535) 95%);
+  border-bottom: 1px solid black;
+  background: white;
   position: fixed;
   z-index: 9999;
 }
