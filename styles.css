@@ -17,8 +17,8 @@ html {
   height: 70px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid black;
-  background: white;
+  border-bottom: 1px solid rgba(155, 154, 154, 0.75);
+  background: linear-gradient(90deg, #283131 3%, #758a94 47%, rgba(81, 71, 95, 0.99) 95%);
   position: fixed;
   z-index: 9999;
 }
@@ -37,7 +37,7 @@ html {
   background-color: #f0f7fe;
 }
 .header__button_create:hover {
-  background-color: #42d7de;
+  background-color: blue;
   color: #fff;
 }
 .header__button_create:hover .fa-plus {
@@ -86,11 +86,11 @@ html {
 }
 
 .fa-chevron-right:hover {
-  color: #6d49f6;
+  color: goldenrod;
 }
 
 .fa-chevron-left:hover {
-  color: #6d49f6;
+  color: go;
 }
 
 .days-container {
