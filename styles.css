@@ -314,7 +314,7 @@ html {
   position: relative;
 }
 .calendar__hour-bar:hover {
-  background-color: #E1F2F7;
+  background-color: blue;
 }
 
 .day-event {
