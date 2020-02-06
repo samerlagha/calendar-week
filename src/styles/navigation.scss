@@ -37,14 +37,14 @@
     min-width: 35px;
 
     &:hover{
-        background-color: $lightGrey;
+        background-color: Grey;
         color: $text-darkGrey;
         border-radius: 100%;
-        //border: 1px solid $violet;
+        
     }
 
     &_current {
-        background-color: $sky-blue;
+        background-color: blue;
         color: $text-white;
         border-radius: 100%;
     }

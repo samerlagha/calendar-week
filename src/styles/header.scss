@@ -1,33 +1,41 @@
 .header {
-    width: 100vw;
-    height: 60px;
+    // position: fixed;
+    // display: flex;
+    // width: 100%;
+    // height: 60px;
+    // align-items: center;
+    // border-bottom: 1px solid rgba(155, 154, 154, 0.75);
+    // z-index: 1;
     display: flex;
-    align-items: center;
-    border-bottom: 1px solid rgba(155, 154, 154, 0.75);
-    
-    background: linear-gradient(90deg, rgb(38, 236, 48) 3%, rgba(24,173,244,1) 47%, rgba(255, 64, 58, 0.991) 95%);
     position: fixed;
-    z-index: 9999;
-    
+    align-items: center;
+    width: 100%;
+    height: 110px;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(155, 154, 154, 0.75);
+    padding-bottom: 40px;
+    z-index: 2;
+
+ 
     &__button_create {
         width: 110px;
         height: 40px;
         border-radius: 20px;
-        box-shadow: 9px 11px 19px -9px rgba(0,0,0,0.62);
+        border: 1px solid rgba(70, 68, 68, 0.438);
         margin-left: 80px;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
-        color: #42d7de;
+        justify-content:space-evenly;
+        color: #797d7e;
+        
         font-weight: 500;
         letter-spacing: 0.5px;
-        background-color: $light-blue;
 
         &:hover {
-            background-color: #42d7de;
-            color: $white;
+            background-color: #080a8a;
+            color: white;
             .fa-plus{
-                background: $white;
+                background: white;
                 -webkit-text-fill-color: transparent;
                 -webkit-background-clip: text;
             }
@@ -35,7 +43,7 @@
 
         .fa-plus {
             font-size: 25px;
-            background: linear-gradient(167deg, rgba(40,210,228,1) 46%, rgba(20,174,246,1) 63%); 
+            background: linear-gradient(167deg, rgb(228, 125, 40) 50%, rgb(20, 246, 76) 40%); 
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
 
@@ -44,19 +52,20 @@
     }
 
     &__button_today {
-        width: 70px;
-        height: 30px;
+        width: 80px;
+        height: 40px;
         border-radius: 5px;
         outline: none;
-        border: none;
-        background-color:$sky-blue;
-        color: $white;
+        border: 1px solid rgba(70, 68, 68, 0.438);
+       background:white;
+        color: black;
         margin-left: 40px;
         outline: none;
         font-weight: 500;
 
         &:hover {
-            background-color: $blue;
+            background-color: blue;
+            color: white;
         }
     }
 
@@ -67,12 +76,12 @@
         }
 
         &_chevron-right {
-            margin-left: 20px;
+            margin-left: 30px;
         }
 
         .chevron {
             font-size: 15px;
-            color: $light-blue;
+            color: black;
             cursor: pointer;
         }
     }
@@ -81,13 +90,13 @@
         font-size: 17px;
         margin-left: 30px;
         font-weight: 500;
-        color: $text-white;
+        color: black;
         font-family: roboto;
     }
 }
 .fa-chevron-right:hover{
- color: $light-violet;
+ color: limegreen;
 }
 .fa-chevron-left:hover{
- color: $light-violet;
+ color: limegreen;
 }
