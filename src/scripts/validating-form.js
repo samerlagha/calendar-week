@@ -5,7 +5,7 @@ import { editSaveHandler } from './save-event.js';
 
  export { durationValidation };
 
-function durationValidation(event) {
+const  durationValidation = event => {
     event.preventDefault();
     const formData = new FormData(popupForm);
 
@@ -18,11 +18,10 @@ function durationValidation(event) {
     } else {
         editSaveHandler(event);
     }
-}
-// popupForm.addEventListener('submit', durationValidation);
+};
 
 
-function validationBeforeEventStarts(event) {
+const validationBeforeEventStarts = event => {
     event.preventDefault();
 
     const currentDate = new Date();
@@ -39,4 +38,4 @@ function validationBeforeEventStarts(event) {
             alert('Forbidden! The event is too soon.') :
             editSaveHandler(event);
     }
-}
+};
