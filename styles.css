@@ -46,7 +46,7 @@ html {
 }
 .header__button_create .fa-plus {
   font-size: 25px;
-  background: linear-gradient(167deg, #28d2e4 46%, #14aef6 63%);
+  background: linear-gradient(167deg, #e44228 46%, #19bb2b 63%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
