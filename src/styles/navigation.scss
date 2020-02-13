@@ -2,7 +2,7 @@
     display: flex;
     position: fixed;
     z-index: 999;
-    margin-top: 60px;
+    margin-top: 80px;
     width: 100%;
     height: 100px;
     background-color: $white;
@@ -40,7 +40,7 @@
         background-color: $lightGrey;
         color: $text-darkGrey;
         border-radius: 100%;
-        //border: 1px solid $violet;
+        
     }
 
     &_current {
