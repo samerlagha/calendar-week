@@ -156,7 +156,7 @@ html {
   max-width: 100%;
   padding: 10px;
   background-color: #fff;
-  color: #293dce;
+  color: #202022;
   border-radius: 5px;
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.75);
   position: fixed;
@@ -259,7 +259,7 @@ html {
   outline: none;
   cursor: pointer;
   color: #fff;
-  background-color: #6d49f6;
+  background-color: #080cf6;
   font-size: 17px;
 }
 
@@ -312,12 +312,12 @@ html {
   background-color: #EFF7F9;
   width: 100%;
   height: 60px;
-  border-bottom: 1px solid #d5d5d5;
-  border-right: 1px solid #d5d5d5;
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
   position: relative;
 }
 .calendar__hour-bar:hover {
-  background-color: #E1F2F7;
+  background-color: #08FB0C;
 }
 
 .day-event {
