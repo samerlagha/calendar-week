@@ -8,7 +8,7 @@ export {
     displayCurrentWeek,
     switchWeekForward,
     switchWeekBackward,
-    displayMonth
+    displayMonth,
 };
 
 const currentWeek = [
@@ -19,12 +19,15 @@ const currentWeek = [
     new Date(),
     new Date(),
     new Date()
-];
+]; 
+// render left & rigth forward and current month and year
 
 const forwardSwitcherBtn = document.querySelector('.header__week-toggle_chevron-right');
 const backwardSwitcherBtn = document.querySelector('.header__week-toggle_chevron-left');
 const monthAndYear = document.querySelector('.header__current-month-year');
+  
 
+//  display current week
 
 const displayCurrentWeek = (week) => {
     const currentDate = new Date().getDate();
@@ -53,16 +56,21 @@ const displayCurrentWeek = (week) => {
 
 displayCurrentWeek(currentWeek);
 
+// render today Btn
+
 const todayBtn = document.querySelector('.header__button_today');
 const todayWeekSwitcher = () => {
     displayCurrentWeek(currentWeek);
     renderCalendar();
     renderEvents();
 };
+
+// on click switch todays week
+
 const switchToTodaysWeek = todayBtn.addEventListener('click', todayWeekSwitcher);
 
 
-
+// forward  rigth switcher action
 
 function forwardSwitcher(currentWeek) {
     let newWeek = [...currentWeek];
@@ -77,10 +85,11 @@ function forwardSwitcher(currentWeek) {
     renderCalendar();
     renderEvents();
 };
+
 const switchWeekForward = forwardSwitcherBtn.addEventListener('click', forwardSwitcher.bind(forwardSwitcherBtn, currentWeek));
 
 
-
+// forward left switch week ... back 
 const backwardSwitcher = (currentWeek) => {
     let newWeek = [...currentWeek];
 
@@ -97,6 +106,7 @@ const backwardSwitcher = (currentWeek) => {
 const switchWeekBackward = backwardSwitcherBtn.addEventListener('click', backwardSwitcher.bind(backwardSwitcherBtn, currentWeek));
 
 
+//  display Month &year
 
 function displayMonth(week) {
     let arrMonth = [];
