@@ -14,11 +14,11 @@ html {
 
 .header {
   width: 100vw;
-  height: 60px;
+  height: 80px;
   display: flex;
   align-items: center;
   border-bottom: 1px solid rgba(155, 154, 154, 0.75);
-  background: linear-gradient(90deg, #26ecdb 3%, #18adf4 47%, rgba(142, 58, 255, 0.9906337535) 95%);
+  background: linear-gradient(90deg, #ec2f26 3%, #24282a 47%, rgba(14, 17, 218, 0.99) 95%);
   position: fixed;
   z-index: 9999;
 }
@@ -31,13 +31,13 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  color: #42d7de;
+  color: red;
   font-weight: 500;
   letter-spacing: 0.5px;
-  background-color: #f0f7fe;
+  background-color: blue;
 }
 .header__button_create:hover {
-  background-color: #42d7de;
+  background-color: #cc1313;
   color: #fff;
 }
 .header__button_create:hover .fa-plus {
