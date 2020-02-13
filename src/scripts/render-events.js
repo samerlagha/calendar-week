@@ -2,6 +2,7 @@ import { setItemToStorage, getItemFromStorage } from './storage.js';
 
 export { renderEvents, mapEvents };
 
+//карта События
 
 const  mapEvents = ()=> {
     const events = getItemFromStorage('events') || [];
