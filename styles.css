@@ -47,7 +47,7 @@ html {
 }
 .header__button_create .fa-plus {
   font-size: 25px;
-  background: linear-gradient(167deg, #28d2e4 46%, #14aef6 63%);
+  background: linear-gradient(167deg, #ca0808 46%, #41f614 63%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -57,14 +57,14 @@ html {
   border-radius: 5px;
   outline: none;
   border: none;
-  background-color: #1dadf4;
+  background-color: blue;
   color: #fff;
   margin-left: 40px;
   outline: none;
   font-weight: 500;
 }
 .header__button_today:hover {
-  background-color: #325ce8;
+  background-color: coral;
 }
 .header__week-toggle_chevron-left {
   margin-left: 30px;
@@ -74,7 +74,7 @@ html {
 }
 .header__week-toggle .chevron {
   font-size: 15px;
-  color: #f0f7fe;
+  color: white;
   cursor: pointer;
 }
 .header__current-month-year {
@@ -86,11 +86,11 @@ html {
 }
 
 .fa-chevron-right:hover {
-  color: #6d49f6;
+  color: red;
 }
 
 .fa-chevron-left:hover {
-  color: #6d49f6;
+  color: red;
 }
 
 .days-container {
