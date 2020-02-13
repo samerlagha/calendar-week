@@ -7,7 +7,7 @@ function createDaysOfWeek(week){
     daysContainer.innerHTML = '';
 
     const gmtBlock = document.createElement('div');
-    gmtBlock.textContent = 'gmt+02';
+    gmtBlock.textContent = 'GMT+02';
     gmtBlock.classList.add('gmt');
     daysContainer.append(gmtBlock);
 
