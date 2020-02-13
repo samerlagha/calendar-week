@@ -19,7 +19,7 @@ function durationValidation(event) {
         editSaveHandler(event);
     }
 }
-// popupForm.addEventListener('submit', durationValidation);
+
 
 
 function validationBeforeEventStarts(event) {
