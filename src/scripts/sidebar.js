@@ -1,3 +1,4 @@
+// сделать боковую панель
 
 function renderSidebar () {
   const sidebar = document.querySelector('.sidebar');

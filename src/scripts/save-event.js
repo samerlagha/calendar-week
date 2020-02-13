@@ -4,6 +4,7 @@ import { popupForm, closePopup } from './create-popup.js';
 
 export { editSaveHandler };
 
+// редактировать & Сохранить обработчик
 const editSaveHandler = event => {
 
     event.preventDefault();

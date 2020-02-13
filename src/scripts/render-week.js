@@ -2,15 +2,22 @@ import { currentWeek } from './render-current-week.js';
 
 export { createDaysOfWeek };
 
+//создать дни недели
+
 function createDaysOfWeek(week){
     const daysContainer = document.querySelector('.days-container');
     daysContainer.innerHTML = '';
+
+    // GMT Block
 
     const gmtBlock = document.createElement('div');
     gmtBlock.textContent = 'GMT+02';
     gmtBlock.classList.add('gmt');
     daysContainer.append(gmtBlock);
 
+
+    // day name  & date of week
+    
     for (let i = 0; i < week.length; i++){
      const oneDay = document.createElement('div');
         oneDay.classList.add('day');

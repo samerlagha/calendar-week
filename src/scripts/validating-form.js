@@ -5,6 +5,8 @@ import { editSaveHandler } from './save-event.js';
 
  export { durationValidation };
 
+ // Проверка продолжительности 
+
 function durationValidation(event) {
     event.preventDefault();
     const formData = new FormData(popupForm);
@@ -19,8 +21,8 @@ function durationValidation(event) {
         editSaveHandler(event);
     }
 }
-// popupForm.addEventListener('submit', durationValidation);
 
+// проверка до начала события
 
 function validationBeforeEventStarts(event) {
     event.preventDefault();
