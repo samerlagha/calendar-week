@@ -2,9 +2,8 @@ import { setItemToStorage, getItemFromStorage } from './storage.js';
 
 export { renderEvents, mapEvents };
 
-//карта События
 
-const  mapEvents = ()=> {
+function mapEvents() {
     const events = getItemFromStorage('events') || [];
 
     const newEvents = [];
@@ -49,10 +48,9 @@ const  mapEvents = ()=> {
 
     setItemToStorage('events', newEvents);
     return newEvents;
-}  ;
+}
 
-// render events
-const renderEvents = ()=> { 
+function renderEvents() {  // display already splitted and generated new array
     const newEvents = mapEvents();
 
     const hourBar = document.querySelectorAll('.calendar__hour-bar');
@@ -98,4 +96,4 @@ const renderEvents = ()=> {
 
         eventDiv.style.background = `${event.colorChooser}`;
     });
-};
+}
