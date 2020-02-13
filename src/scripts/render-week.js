@@ -2,24 +2,27 @@ import { currentWeek } from './render-current-week.js';
 
 export { createDaysOfWeek };
 
-function createDaysOfWeek(week){
+const createDaysOfWeek = week => {
     const daysContainer = document.querySelector('.days-container');
     daysContainer.innerHTML = '';
-
+   
+    // GTM Block
     const gmtBlock = document.createElement('div');
     gmtBlock.textContent = 'GMT+02';
     gmtBlock.classList.add('gmt');
     daysContainer.append(gmtBlock);
-
+    
+    // days of week
+    
     for (let i = 0; i < week.length; i++){
      const oneDay = document.createElement('div');
         oneDay.classList.add('day');
-        
+        //day name
         const dayName = document.createElement('span');
         dayName.classList.add('day-name');
         dayName.textContent = week[i].toDateString().split(' ')[0];
         oneDay.append(dayName);
-
+       // day date
         const dayDate = document.createElement('div');
         dayDate.classList.add('day-date');
         dayDate.textContent = week[i].getDate();
