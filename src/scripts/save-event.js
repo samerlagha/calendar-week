@@ -4,6 +4,8 @@ import { popupForm, closePopup } from './create-popup.js';
 
 export { editSaveHandler };
 
+//редактировать Сохранить Handler
+
 const editSaveHandler = event => {
 
     event.preventDefault();
@@ -15,6 +17,8 @@ const editSaveHandler = event => {
         return acc;
     }, {});
 
+    // формат времени
+    
     const timeFrom = (newEvent.timeFrom).split(':');
     newEvent.dateFrom = new Date(new Date(newEvent.dateFrom).setHours(+timeFrom[0], +timeFrom[1]));
     const timeTo = (newEvent.timeTo).split(':');
@@ -24,7 +28,7 @@ const editSaveHandler = event => {
         newEvent.id = Math.floor(Math.random() * 1000);
 
         if (newEvent.title == '') {
-            newEvent.title = 'No Title';
+            newEvent.title = 'нет названий';
         }
         events.push(newEvent);
         
@@ -44,5 +48,5 @@ const editSaveHandler = event => {
     renderEvents();
     console.log(events);
 }
-
+//добавить  событий submit
 popupForm.addEventListener('submit', editSaveHandler);
