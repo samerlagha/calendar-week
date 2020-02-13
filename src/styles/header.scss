@@ -1,6 +1,6 @@
 .header {
     width: 100vw;
-    height: 70px;
+    height: 100px;
     display: flex;
     align-items: center;
     border-bottom: 1px solid
@@ -9,7 +9,7 @@
     #283131 3%, #758a94 47%,
     rgba(81, 71, 95, 0.99) 95%);
     position: fixed;
-    z-index: 9999;
+
     
     &__button_create {
         width: 110px;
