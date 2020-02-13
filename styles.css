@@ -131,7 +131,7 @@ html {
   min-width: 35px;
 }
 .day-date:hover {
-  background-color: orange;
+  background-color: o;
   color: #3c4043;
   border-radius: 100%;
 }
