@@ -1,13 +1,19 @@
 import { setItemToStorage, getItemFromStorage } from './storage.js';
 import { popupForm, saveButton, closePopup } from './create-popup.js';
 import { editSaveHandler } from './save-event.js';
+export { durationValidation };
 
+//Проверка продолжительности
 
+<<<<<<< HEAD
  export { durationValidation };
 
  // Проверка продолжительности 
 
 function durationValidation(event) {
+=======
+const  durationValidation = event => {
+>>>>>>> 9f5109efc24327092473f1dedabee7d38d486213
     event.preventDefault();
     const formData = new FormData(popupForm);
 
@@ -20,11 +26,17 @@ function durationValidation(event) {
     } else {
         editSaveHandler(event);
     }
+<<<<<<< HEAD
 }
 
 // проверка до начала события
+=======
+};
 
-function validationBeforeEventStarts(event) {
+//проверка до начала события
+>>>>>>> 9f5109efc24327092473f1dedabee7d38d486213
+
+const validationBeforeEventStarts = event => {
     event.preventDefault();
 
     const currentDate = new Date();
@@ -38,7 +50,7 @@ function validationBeforeEventStarts(event) {
 
     if (dateOfEvent.getDate() == currentDate.getDate()) {
         dateOfEvent.getTime() - currentDate.getTime() > mins ?
-            alert('Forbidden! The event is too soon.') :
+            alert('Запрещено! Событие слишком рано.') :
             editSaveHandler(event);
     }
-}
+};
