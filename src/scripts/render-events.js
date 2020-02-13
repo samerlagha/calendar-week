@@ -3,7 +3,7 @@ import { setItemToStorage, getItemFromStorage } from './storage.js';
 export { renderEvents, mapEvents };
 
 
-function mapEvents() {
+const  mapEvents = ()=> {
     const events = getItemFromStorage('events') || [];
 
     const newEvents = [];
@@ -19,8 +19,8 @@ function mapEvents() {
                     new Date(event.dateFrom).getFullYear(),
                     new Date(event.dateFrom).getMonth(),
                     new Date(event.dateFrom).getDate(),
-                    23,
-                    59
+//                     23,
+//                     59
                     ),
                 description: event.description,
                 colorChooser: event.colorChooser,
@@ -48,9 +48,10 @@ function mapEvents() {
 
     setItemToStorage('events', newEvents);
     return newEvents;
-}
+}  ;
 
-function renderEvents() {  // display already splitted and generated new array
+// render events
+const renderEvents = ()=> { 
     const newEvents = mapEvents();
 
     const hourBar = document.querySelectorAll('.calendar__hour-bar');
@@ -96,4 +97,4 @@ function renderEvents() {  // display already splitted and generated new array
 
         eventDiv.style.background = `${event.colorChooser}`;
     });
-}
+};
