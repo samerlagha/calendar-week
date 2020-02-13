@@ -1,9 +1,9 @@
 import { setItemToStorage, getItemFromStorage } from './storage.js';
 import { popupForm, saveButton, closePopup } from './create-popup.js';
 import { editSaveHandler } from './save-event.js';
+export { durationValidation };
 
-
- export { durationValidation };
+//Проверка продолжительности
 
 const  durationValidation = event => {
     event.preventDefault();
@@ -20,6 +20,7 @@ const  durationValidation = event => {
     }
 };
 
+//проверка до начала события
 
 const validationBeforeEventStarts = event => {
     event.preventDefault();
@@ -35,7 +36,7 @@ const validationBeforeEventStarts = event => {
 
     if (dateOfEvent.getDate() == currentDate.getDate()) {
         dateOfEvent.getTime() - currentDate.getTime() > mins ?
-            alert('Forbidden! The event is too soon.') :
+            alert('Запрещено! Событие слишком рано.') :
             editSaveHandler(event);
     }
 };
