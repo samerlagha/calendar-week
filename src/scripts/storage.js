@@ -2,8 +2,6 @@ import { renderEvents } from './render-events.js'
 
 export { setItemToStorage, getItemFromStorage };
 
-//storage 
-
 const setItemToStorage = (key, value) => {
     localStorage.setItem(key, JSON.stringify(value));
 }

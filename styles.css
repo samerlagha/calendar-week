@@ -14,13 +14,13 @@ html {
 
 .header {
   width: 100vw;
-  height: 100px;
+  height: 60px;
   display: flex;
   align-items: center;
   border-bottom: 1px solid rgba(155, 154, 154, 0.75);
-  background: linear-gradient(90deg, #283131 3%, #758a94 47%, rgba(81, 71, 95, 0.99) 95%);
+  background: linear-gradient(90deg, #26ecdb 3%, #18adf4 47%, rgba(142, 58, 255, 0.9906337535) 95%);
   position: fixed;
-  z-index: 100;
+  z-index: 9999;
 }
 .header__button_create {
   width: 110px;
@@ -34,20 +34,20 @@ html {
   color: #42d7de;
   font-weight: 500;
   letter-spacing: 0.5px;
-  background-color: blue;
+  background-color: #f0f7fe;
 }
 .header__button_create:hover {
-  background-color: #160338;
-  color: white;
+  background-color: #42d7de;
+  color: #fff;
 }
 .header__button_create:hover .fa-plus {
-  background: white;
+  background: #fff;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 .header__button_create .fa-plus {
   font-size: 25px;
-  background: linear-gradient(167deg, #e44228 46%, #19bb2b 63%);
+  background: linear-gradient(167deg, #28d2e4 46%, #14aef6 63%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -57,14 +57,14 @@ html {
   border-radius: 5px;
   outline: none;
   border: none;
-  background-color: blue;
-  color: white;
+  background-color: #1dadf4;
+  color: #fff;
   margin-left: 40px;
   outline: none;
   font-weight: 500;
 }
 .header__button_today:hover {
-  background-color: grey;
+  background-color: #325ce8;
 }
 .header__week-toggle_chevron-left {
   margin-left: 30px;
@@ -74,34 +74,34 @@ html {
 }
 .header__week-toggle .chevron {
   font-size: 15px;
-  color: red;
+  color: #f0f7fe;
   cursor: pointer;
 }
 .header__current-month-year {
   font-size: 17px;
   margin-left: 30px;
   font-weight: 500;
-  color: white;
+  color: #fff;
   font-family: roboto;
 }
 
 .fa-chevron-right:hover {
-  color: goldenrod;
+  color: #6d49f6;
 }
 
 .fa-chevron-left:hover {
-  color: goldenrod;
+  color: #6d49f6;
 }
 
 .days-container {
   display: flex;
   position: fixed;
-  z-index: 100;
-  margin-top: 80px;
+  z-index: 999;
+  margin-top: 60px;
   width: 100%;
   height: 100px;
-  background-color: white;
-  color: grey;
+  background-color: #fff;
+  color: #70757a;
   border-bottom: 1px solid #d5d5d5;
   font-family: Roboto, Helvetica, Arial, sans-serif;
   box-shadow: 0px 8px 5px -2px rgba(0, 0, 0, 0.1);
@@ -131,12 +131,12 @@ html {
   min-width: 35px;
 }
 .day-date:hover {
-  background-color: gray;
+  background-color: #ececec;
   color: #3c4043;
   border-radius: 100%;
 }
 .day-date_current {
-  background-color: blue;
+  background-color: #1dadf4;
   color: #fff;
   border-radius: 100%;
 }
