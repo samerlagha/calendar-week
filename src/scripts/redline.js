@@ -8,12 +8,12 @@ const currentHourBar = displayRedLineOnCurrentHourBar();
 export function renderRedLine() {
 
   const dot = document.createElement("div");
-  dot.classList.add("dot");
+  dot.classList.add("boll");
 
   const line = document.createElement("div");
   line.classList.add("line");
 
-  redLine.append(dot);
+  redLine.append(boll);
   redLine.append(line);
 
   currentHourBar.append(redLine);
@@ -23,7 +23,7 @@ renderRedLine();
 
 function displayRedLineOnCurrentHourBar() {
 
-  // renderRedLine();
+  
 
   const hourContainer = document.querySelectorAll(".calendar__hour-bar");
 
@@ -37,7 +37,7 @@ function displayRedLineOnCurrentHourBar() {
   redLine.style.marginTop = positionInsideHourBar + 'px';
 
   return [...hourContainer].find(
-    el => el.dataset.day == currentDay && el.dataset.hour == currentHour//&& positionInsideHourBar
+    el => el.dataset.day == currentDay && el.dataset.hour == currentHour
   );
 }
 
