@@ -4,7 +4,7 @@ import { renderCalendar } from "./render-calendar.js";
 const redLine = document.querySelector(".redline");
 
 const currentHourBar = displayRedLineOnCurrentHourBar();
-
+//render Red line
 export function renderRedLine() {
 
   const dot = document.createElement("div");
@@ -20,7 +20,7 @@ export function renderRedLine() {
 }
 
 renderRedLine();
-
+//отображать красную линию на текущем часовом баре
 function displayRedLineOnCurrentHourBar() {
 
   
@@ -32,7 +32,7 @@ function displayRedLineOnCurrentHourBar() {
   const currentHour = currentDate.getHours();
   const currentMinute = currentDate.getMinutes()
 
-  let positionInsideHourBar = currentMinute - 4;
+  let positionInsideHourBar = currentMinute - 15;
 
   redLine.style.marginTop = positionInsideHourBar + 'px';
 

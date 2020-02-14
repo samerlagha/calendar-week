@@ -5,7 +5,7 @@ import { createPopup } from './create-popup.js';
 export { renderCalendar };
  
 const calendar = document.querySelector('.calendar');
-
+//render calendar
 const renderCalendar = () => {
     calendar.innerHTML = '';
     const week = document.createElement('div');

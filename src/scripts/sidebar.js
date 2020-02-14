@@ -1,4 +1,4 @@
-
+//render side bar
 function renderSidebar () {
   const sidebar = document.querySelector('.sidebar');
   

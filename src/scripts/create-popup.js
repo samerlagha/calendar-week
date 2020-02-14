@@ -10,7 +10,6 @@ export {
     createPopup,
     createPopupButton,
     formFieldPopUp,
-    // weekBar
 };
 
 const weekBar = document.querySelector('.calendar__week-bar');
@@ -36,7 +35,7 @@ const formFieldPopUp = {
 };
 
 
-
+//создать всплывающее окно
 function createPopup(event) {
     const targetEventId = event.target.getAttribute('data-id');
     const events = getItemFromStorage('events') || [];
@@ -85,7 +84,6 @@ function createPopup(event) {
     deleteButton.dataset.id = event.target.dataset.id;
 };
 
-// weekBar.addEventListener('click', createPopup);
 
 
 
@@ -115,7 +113,7 @@ function createPopupButton() {
 createButton.addEventListener('click', createPopupButton); 
 
 
-
+//close Popup
 
 function closePopup() {
     const popupTitle = document.querySelector('.popup__header_title-input');

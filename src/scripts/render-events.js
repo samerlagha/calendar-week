@@ -2,7 +2,7 @@ import { setItemToStorage, getItemFromStorage } from './storage.js';
 
 export { renderEvents, mapEvents };
 
-
+//map events
 function mapEvents() {
     const events = getItemFromStorage('events') || [];
 
@@ -49,8 +49,8 @@ function mapEvents() {
     setItemToStorage('events', newEvents);
     return newEvents;
 }
-
-function renderEvents() {  // display already splitted and generated new array
+//render event
+function renderEvents() { 
     const newEvents = mapEvents();
 
     const hourBar = document.querySelectorAll('.calendar__hour-bar');

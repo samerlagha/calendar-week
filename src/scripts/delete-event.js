@@ -4,7 +4,7 @@ import { closePopup, deleteButton } from './create-popup.js';
 
 export { deleteEvent };
 
-
+//удалить событие
 function deleteEvent(event) {
     const events = getItemFromStorage('events');
 

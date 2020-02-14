@@ -1,13 +1,13 @@
 import { currentWeek } from './render-current-week.js';
 
 export { createDaysOfWeek };
-
+//создать день недели
 function createDaysOfWeek(week){
     const daysContainer = document.querySelector('.days-container');
     daysContainer.innerHTML = '';
 
     const gmtBlock = document.createElement('div');
-    gmtBlock.textContent = 'gmt+02';
+    gmtBlock.textContent = 'GMT+02';
     gmtBlock.classList.add('gmt');
     daysContainer.append(gmtBlock);
 

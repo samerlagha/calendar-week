@@ -20,12 +20,12 @@ const currentWeek = [
     new Date(),
     new Date()
 ];
-
+//render left &rigth & block monthYear
 const forwardSwitcherBtn = document.querySelector('.header__week-toggle_chevron-right');
 const backwardSwitcherBtn = document.querySelector('.header__week-toggle_chevron-left');
 const monthAndYear = document.querySelector('.header__current-month-year');
 
-
+//показать текущую неделю
 const displayCurrentWeek = (week) => {
     const currentDate = new Date().getDate();
     const currentDay = new Date().getDay();
@@ -59,7 +59,7 @@ const todayWeekSwitcher = () => {
     renderCalendar();
     renderEvents();
 };
-const switchToTodaysWeek = todayBtn.addEventListener('click', todayWeekSwitcher);
+const switchToTodaysWeek = todayBtn.addEventListener('click', todayWeekSwitcher);//переключить сегодняшнюю неделю
 
 
 
