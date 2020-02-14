@@ -4,26 +4,26 @@ import { renderCalendar } from "./render-calendar.js";
 const redLine = document.querySelector(".redline");
 
 const currentHourBar = displayRedLineOnCurrentHourBar();
-//render Red line
+
 export function renderRedLine() {
 
   const dot = document.createElement("div");
-  dot.classList.add("boll");
+  dot.classList.add("dot");
 
   const line = document.createElement("div");
   line.classList.add("line");
 
-  redLine.append(boll);
+  redLine.append(dot);
   redLine.append(line);
 
   currentHourBar.append(redLine);
 }
 
 renderRedLine();
-//отображать красную линию на текущем часовом баре
+
 function displayRedLineOnCurrentHourBar() {
 
-  
+  // renderRedLine();
 
   const hourContainer = document.querySelectorAll(".calendar__hour-bar");
 
@@ -37,7 +37,7 @@ function displayRedLineOnCurrentHourBar() {
   redLine.style.marginTop = positionInsideHourBar + 'px';
 
   return [...hourContainer].find(
-    el => el.dataset.day == currentDay && el.dataset.hour == currentHour
+    el => el.dataset.day == currentDay && el.dataset.hour == currentHour//&& positionInsideHourBar
   );
 }
 
