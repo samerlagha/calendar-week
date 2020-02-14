@@ -32,7 +32,7 @@ function displayRedLineOnCurrentHourBar() {
   const currentHour = currentDate.getHours();
   const currentMinute = currentDate.getMinutes()
 
-  let positionInsideHourBar = currentMinute - 15;
+  let positionInsideHourBar = currentMinute - 4;
 
   redLine.style.marginTop = positionInsideHourBar + 'px';
 
