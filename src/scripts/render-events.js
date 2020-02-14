@@ -19,8 +19,8 @@ function mapEvents() {
                     new Date(event.dateFrom).getFullYear(),
                     new Date(event.dateFrom).getMonth(),
                     new Date(event.dateFrom).getDate(),
-//                     23,
-//                     59
+                    23,
+                    59
                     ),
                 description: event.description,
                 colorChooser: event.colorChooser,
