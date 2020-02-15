@@ -37,8 +37,7 @@ function displayRedLineOnCurrentHourBar() {
   redLine.style.marginTop = positionInsideHourBar + 'px';
 
   return [...hourContainer].find(
-    el => el.dataset.day == currentDay && el.dataset.hour == currentHour//&& positionInsideHourBar
-  );
+    el => el.dataset.day == currentDay && el.dataset.hour == currentHour);
 }
 
 displayRedLineOnCurrentHourBar();
