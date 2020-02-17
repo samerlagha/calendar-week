@@ -2,7 +2,7 @@ import { renderEvents } from './render-events.js';
 
 export { setItemToStorage, getItemFromStorage };
 
-//установить Item для хранения
+//установить Item для хранения localStorage
 const setItemToStorage = (key, value) => {
     localStorage.setItem(key, JSON.stringify(value));
 }
