@@ -9,9 +9,9 @@ const setItemToStorage = (key, value) => {
 const getItemFromStorage = (key) => JSON.parse(localStorage.getItem(key));
 
 //Изменение хранилища
-function onStorageChange(event) {
+const onStorageChange = (event)=> {
     if (event.key === 'events') {
         renderEvents();
     }
-}
+};
 window.addEventListener('storage', onStorageChange);
