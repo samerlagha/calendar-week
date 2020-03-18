@@ -1,4 +1,4 @@
-import { setItemToStorage, getItemFromStorage } from './storage.js';
+import { setItemToStorage, getItemFromStorage } from './gateways.js';
 
 export { renderEvents, mapEvents };
 

@@ -1,4 +1,5 @@
-import { setItemToStorage, getItemFromStorage } from './storage.js';
+// import { setItemToStorage, getItemFromStorage } from './storage.js';
+import { eventDelete, updateEvent, addNewEvent, getEventList } from './gateways.js';
 import { popupForm, saveButton, closePopup } from './create-popup.js';
 import { editSaveHandler } from './save-event.js';
 
